@@ -24,12 +24,12 @@
  * ----------------------------------------------------------------------
  * 
  * C O N V E R T E R ... 
- * reads raw file and creates a reorganized JSON file that is used by the class.
+ * reads raw file and creates a reorganized serialized file that is used by the class.
  *  
  * ----------------------------------------------------------------------
  */
 $sInfile='FileSigs_20200424/file_sigs_RAW.txt';
-$sOutfile='../src/filedetector.sigs.json';
+// $sOutfile='../src/filedetector.sigs.json';
 $sOutfile2='../src/filedetector.sigs.txt';
 
 $delimiter= ',';
@@ -77,7 +77,7 @@ krsort($aSig);
 // ----------------------------------------------------------------------
 // WRITE
 // ----------------------------------------------------------------------
-file_put_contents($sOutfile, json_encode($aSig));
+// file_put_contents($sOutfile, json_encode($aSig));
 file_put_contents($sOutfile2, serialize($aSig));
 
 

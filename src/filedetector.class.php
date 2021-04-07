@@ -106,7 +106,7 @@ class filedetector {
     }
     
     /**
-     * prettify given hex code
+     * prettify given hex code: uppercase and a space after 2 digits
      * 
      * @param string $sHexcode  hexcode
      * @return string
