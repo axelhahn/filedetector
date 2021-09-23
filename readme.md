@@ -106,7 +106,7 @@ Array
 To return just the best match you can use the parameter true
 
 ```php
-// get all matching filetypes
+// get the best matching filetype only
 print_r($oFD->getType(true));
 ```
 
