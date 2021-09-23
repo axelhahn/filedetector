@@ -1,7 +1,7 @@
 <?php
 
 
-require './src/filedetector.class.php';
+require '../src/filedetector.class.php';
 
 $oFD=new axelhahn\filedetector();
 
@@ -19,8 +19,8 @@ echo '----------'.PHP_EOL;
 // ----------------------------------------------------------------------
 try{
     foreach(array(
-        'build/FileSigs_20200424/FTK_sigs_GCK.zip',
-        'build/FileSigs_20200424/GKA_software_license.pdf'
+        '../build/FileSigs_20200424/FTK_sigs_GCK.zip',
+        '../build/FileSigs_20200424/GKA_software_license.pdf'
     ) as $sMyfile){
         $oFD->setFile($sMyfile); 
         echo $oFD->dump(); 
