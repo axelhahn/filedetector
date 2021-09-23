@@ -126,7 +126,8 @@ Array
             [trailer] => 0
         )
 
-)```
+)
+```
 
 
 Example: you can try to detect a file type by a few first bytes
@@ -172,4 +173,5 @@ Array
                                                                     
         )                                                           
                                                                     
-)```
+)
+```
